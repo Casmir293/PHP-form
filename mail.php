@@ -6,6 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 //required files
+require_once 'config.php';
 require './vendor/phpmailer/phpmailer/src/Exception.php';
 require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require './vendor/phpmailer/phpmailer/src/SMTP.php';
@@ -21,7 +22,7 @@ if (empty($_POST["send"])) {
     $mail->Host       = 'smtp.gmail.com';       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;             //Enable SMTP authentication
     $mail->Username   = 'casmir293@gmail.com';   //SMTP write your email
-    $mail->Password   = 'duntqjbxrrlxssri';      //SMTP password
+    $mail->Password   = $SMTPPassword;      //SMTP password
     $mail->SMTPSecure = 'ssl';            //Enable implicit SSL encryption
     $mail->Port       = 465;                                    
 
