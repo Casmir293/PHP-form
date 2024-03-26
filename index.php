@@ -25,8 +25,13 @@
       .container {
         max-width: 400px;
         width: 100%;
-        margin: 0 auto;
+        margin: 10% auto;
         position: relative;
+      }
+
+      form{
+        border-radius: 10px;
+
       }
 
       #contact input {
@@ -62,6 +67,7 @@
         max-width: 100%;
         resize: none;
         width: 100%;
+        padding: 10px;
       }
 
       button {
