@@ -13,7 +13,7 @@ require './vendor/phpmailer/phpmailer/src/SMTP.php';
 
 
 //Create an instance; passing `true` enables exceptions
-if (empty($_POST["send"])) {
+if (isset($_POST["send"])) {
 
   $mail = new PHPMailer(true);
 

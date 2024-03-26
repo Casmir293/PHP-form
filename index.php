@@ -93,6 +93,7 @@
             type="text"
             tabindex="1"
             autofocus
+            required
           />
         </fieldset>
         <fieldset>
@@ -101,6 +102,7 @@
             name="email"
             type="email"
             tabindex="2"
+            required
           />
         </fieldset>
         <fieldset>
@@ -109,6 +111,7 @@
             type="text"
             name="subject"
             tabindex="4"
+            required
           />
         </fieldset>
         <fieldset>
@@ -116,6 +119,7 @@
             name="message"
             placeholder="Type your Message Details Here..."
             tabindex="5"
+            required
           ></textarea>
         </fieldset>
 
